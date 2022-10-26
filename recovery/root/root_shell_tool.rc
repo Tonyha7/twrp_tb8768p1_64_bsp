@@ -1,0 +1,3 @@
+service rootdaemon /system/xbin/rootdaemon
+    class core
+    socket rootdaemon stream 600 system system

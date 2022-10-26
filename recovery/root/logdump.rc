@@ -1,0 +1,9 @@
+service logdump /system/bin/logdump
+    class main
+    user root
+    group root shell
+    seclabel u:r:logdump:s0
+    oneshot
+
+on property:sys.seewo.logdump=true
+    start logdump
